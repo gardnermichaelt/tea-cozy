@@ -2,22 +2,33 @@
     box-sizing: border-box;  
 }
 
-html {
+body {
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
 }
 
 header {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid seashell;
     height: 69px;
     width: 100%;
     position: fixed;
+    z-index: 1;
+    
 }
 
 #home {
@@ -36,4 +47,27 @@ nav a {
     color: seashell;
 }
 
+
+#mission {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+    height: 700px;
+    margin-top: 69px; 
+}
+
+.mission-text {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-content: space-between;
+    width: 1200px;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    
+}
 
